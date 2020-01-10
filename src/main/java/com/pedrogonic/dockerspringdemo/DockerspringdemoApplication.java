@@ -11,13 +11,13 @@ public class DockerspringdemoApplication {
 
     @GetMapping("/")
     public String home() {
-        return "Hello Docker updated!";
+        return "Hello cache!";
     }
 
     public static void main(String[] args) {
         SpringApplication.run(DockerspringdemoApplication.class, args);
 
-        System.out.println("hello!");
+        System.out.println("Testing caching...");
 
     }
 

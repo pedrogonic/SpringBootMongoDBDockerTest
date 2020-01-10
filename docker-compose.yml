@@ -1,7 +1,10 @@
 version: "3"
 services:
   api:
-    image: pedrogonic/dockerspringdemo
+    image: pedrogonic/dockerspringdemoimage
+    build:
+      context: ./
+      dockerfile: Dockerfile
     container_name: dockertest
     ports:
       - 8090:8080
