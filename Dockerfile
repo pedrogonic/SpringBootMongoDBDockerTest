@@ -1,13 +1,10 @@
-FROM maven:alpine AS MAVEN_IMAGE
-
+FROM maven:3.3-jdk-8-alpine AS MAVEN_IMAGE
 WORKDIR /app
 ADD pom.xml /app
-# ENV MAVEN_CONFIG "$USER_HOME_DIR/.m2"
-RUN mvn dependency:go-offline
+RUN mvn -e -U dependency:go-offline  --fail-never
 
 COPY src /app/src
-RUN mvn -v
-RUN mvn verify
+RUN mvn -e -U verify
 
 FROM openjdk:8-jdk-alpine
 WORKDIR /app

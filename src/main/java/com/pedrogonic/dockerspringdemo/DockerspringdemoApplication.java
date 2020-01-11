@@ -9,15 +9,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DockerspringdemoApplication {
 
-    @GetMapping("/")
-    public String home() {
-        return "Hello cache!";
-    }
-
     public static void main(String[] args) {
         SpringApplication.run(DockerspringdemoApplication.class, args);
 
-        System.out.println("Testing caching...");
+        System.out.println("Testing caching!");
 
     }
 
