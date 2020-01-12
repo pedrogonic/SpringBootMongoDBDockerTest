@@ -6,7 +6,7 @@ This repository was created simply to test integration and development in differ
 
 Navigate between branches to checkout the each step.
 
-##Table of Contents
+## Table of Contents
 
 1. - [x] Build with a Dockerfile 
 2. - [x] Build Java code inside a container with docker-compose
