@@ -31,7 +31,8 @@ build/
 .vscode/
 
 mvnw
-
 mvnw.cmd
-
 .mvn
+
+## Mongo container volume
+/mongo-volume/
