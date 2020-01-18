@@ -8,11 +8,10 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 @Data
 @Builder
-@Document(collection = "users")
-public class WebsiteUser {
+public class WebsiteUserDTO {
 
     @Id
-    private ObjectId id;
+    private String id;
 
     private String name;
     private String email;
