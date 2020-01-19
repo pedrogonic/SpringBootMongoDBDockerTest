@@ -96,6 +96,8 @@
                 <directory>src/main/resources</directory>
                 <includes>
                     <include>application.properties</include>
+                    <include>application-dev.properties</include>
+                    <include>application-default.properties</include>
                     <include>api.properties</include>
                 </includes>
             </resource>
